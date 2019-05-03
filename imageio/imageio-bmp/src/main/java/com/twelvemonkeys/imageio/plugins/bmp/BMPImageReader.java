@@ -243,7 +243,7 @@ public final class BMPImageReader extends ImageReaderBase {
                 }
 
                 // Default if no mask
-                return ImageTypeSpecifiers.createFromBufferedImageType(BufferedImage.TYPE_INT_RGB);
+                return ImageTypeSpecifiers.createFromBufferedImageType(BufferedImage.TYPE_INT_ARGB);
 
             case 0:
                 if (header.getCompression() == DIB.COMPRESSION_JPEG || header.getCompression() == DIB.COMPRESSION_PNG) {
